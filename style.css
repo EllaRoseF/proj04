@@ -1,0 +1,184 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set font styles */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    background-color: #ccc;
+    margin-bottom: 1.5rem;
+  }
+  
+  .menu-item-title {
+    display: block;
+    background-color: #f00;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    font-size: 120%;
+  }
+  
+  h1 {
+    letter-spacing: 190%;
+  }
+  
+  dd,
+  p {
+    background-color: #fff;
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  
+  dd {
+    background-color: #ccc;
+    padding: 1.5em;
+    border-radius: 5px;
+  }
+  
+  h2 {
+    background-color: #fff;
+  }
+  
+  /* Container for the entire page */
+  #container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.25rem;
+    gap: 1.25rem;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  
+  /* Style for the info section */
+  #info {
+    grid-column: 1 / span 2;
+
+  }
+  
+  /* Style for the appetizers section */
+  #appetizers,
+  /* Style for the entrees section */
+  #entrees {
+    flex: 1;
+    min-width: calc(50% - 1.25rem);
+  }
+  
+  .warning-label {
+    background-color: #f00;
+    color: #fff;
+  }
+  h1{
+    letter-spacing: 0.8rem;
+    padding: 20px;
+  }
+  
+  h1,
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.625rem;
+  }
+  
+  .price {
+    margin-left: 75%;
+    margin: 20px;
+    color: #000;
+    padding: auto;
+    font-weight: light;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .warning {
+    font-size: 0.75rem;
+    background-color: red;
+    color: #fff;
+    padding: 1em;
+  }
+  
+  .label {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #f00;
+    color: #fff;
+    padding: 3px 6px;
+    border-radius: 3px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .newitem {
+    background-color: #333;
+    color: #fff;
+  }
+  .button {
+    display: inline-block;
+    position: relative;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 20px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: sans-serif;
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transition: all 0.3s ease-in-out;
+
+  }
+  
+  .button:hover .arrow {
+    transform: translateY(-50%) rotate(-45deg);
+  }
+  
+  /* Media query for larger screens */
+  @media (min-width: 1100px) {
+    body {
+        font-size: 1.25rem;
+      }
+    
+      h1,
+      h2 {
+        font-size: 2rem;
+        text-align: center;
+      }
+    
+      #container {
+        padding: 2rem;
+      }
+    
+      .menu-item-title {
+        padding: 6px 12px;
+        font-size: 140%;
+        text-align-last: center;
+      }
+    
+      dd {
+        padding: 2em;
+      }
+    }
